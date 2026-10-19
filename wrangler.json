@@ -1,17 +1,17 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "assets": {
-    "directory": "./dist/client"
-  },
-  "compatibility_date": "2026-10-12",
-  "name": "austin-raey",
-  "preview_urls": false,
-  "routes": [
-    {
-      "custom_domain": true,
-      "enabled": true,
-      "pattern": "raey.me",
-      "previews_enabled": false
-    }
-  ]
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"assets": {
+		"directory": "./dist/client"
+	},
+	"compatibility_date": "2026-10-12",
+	"name": "austin-raey",
+	"preview_urls": false,
+	"routes": [
+		{
+			"custom_domain": true,
+			"enabled": true,
+			"pattern": "raey.me",
+			"previews_enabled": false
+		}
+	]
 }

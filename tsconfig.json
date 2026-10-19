@@ -1,8 +1,8 @@
 {
-  "compilerOptions": {
-    "paths": {
-      "#/*": ["./src/*"]
-    }
-  },
-  "extends": ["@wren-js/ssx/tsconfig/strict"]
+	"compilerOptions": {
+		"paths": {
+			"#/*": ["./src/*"]
+		}
+	},
+	"extends": ["@wren-js/ssx/tsconfig/strict"]
 }

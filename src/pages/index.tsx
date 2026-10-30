@@ -94,7 +94,7 @@ export default function PageIndex() {
 				<figure>
 					<img
 						alt="Austin's profile picture"
-						class=":uno: image-render-pixel absolute top-0 right-0 z-0 -mr-2 size-14 opacity-75 mix-blend-color-burn dark:mix-blend-overlay"
+						class=":uno: image-render-pixel absolute top-0 right-0 z-0 -mr-2 size-20 opacity-75 mix-blend-color-burn dark:mix-blend-overlay"
 						fetchpriority="high"
 						src="./pfp-bw.svg"
 					/>

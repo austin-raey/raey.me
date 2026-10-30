@@ -19,14 +19,6 @@ export default function RootLayout({ children }: { children: JSX.Children }) {
 					type="image/avif"
 				/>
 				<link
-					as="image"
-					fetchpriority="high"
-					href="/pfp-bw.svg"
-					rel="preload"
-					type="image/svg+xml"
-				/>
-
-				<link
 					as="font"
 					crossorigin="anonymous"
 					href="/sans.woff2"

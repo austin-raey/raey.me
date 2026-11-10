@@ -77,7 +77,7 @@ export const head = () => (
 const NavLink = ({ link }: { link: Link }) => (
 	<Glass
 		as={Link}
-		class=":uno: relative z-1 flex items-center px-2.5 py-1.75 font-semibold"
+		class=":uno: font-semibold px-2.5 py-1.75 flex items-center relative z-1"
 		href={link.url}
 		rel={link?.isLocal ? undefined : "noopener noreferrer"}
 		style={link.url === "/projects" ? "view-transition-name: breadcrumb" : undefined}
@@ -89,26 +89,26 @@ const NavLink = ({ link }: { link: Link }) => (
 );
 export default function PageIndex() {
 	return (
-		<div class=":uno: text-4 relative flex h-full flex-col gap-2">
+		<div class=":uno: text-4 flex flex-col gap-2 h-full relative">
 			<header>
 				<figure>
 					<img
 						alt="Austin's profile picture"
-						class=":uno: image-render-pixel absolute top-0 right-0 z-0 -mr-2 size-20 opacity-75 mix-blend-color-burn dark:mix-blend-overlay"
+						class=":uno: image-render-pixel opacity-75 size-20 right-0 top-0 absolute z-0 mix-blend-color-burn -mr-2 dark:mix-blend-overlay"
 						fetchpriority="high"
 						src="./pfp-bw.svg"
 					/>
 					<figcaption class=":uno: mix-blend-luminosity">
-						<h1 class=":uno: text-9 view-transition-heading flex flex-col">
-							<span class=":uno: text-7 leading-none font-normal tracking-tight">Austin</span>
-							<span class=":uno: leading-none font-extrabold tracking-tight">Raey</span>
+						<h1 class=":uno: text-9 flex flex-col view-transition-heading">
+							<span class=":uno: text-7 leading-none tracking-tight font-normal">Austin</span>
+							<span class=":uno: leading-none tracking-tight font-extrabold">Raey</span>
 						</h1>
 					</figcaption>
 				</figure>
 			</header>
 
-			<main class=":uno: view-transition-description flex grow basis-full flex-col gap-2 mix-blend-luminosity">
-				<section class=":uno: flex flex-col gap-2 font-semibold">
+			<main class=":uno: flex grow basis-full flex-col gap-2 mix-blend-luminosity view-transition-description">
+				<section class=":uno: font-semibold flex flex-col gap-2">
 					<p>
 						<i class=":uno: i-lucide-map-pin" inert="true" />
 						<span class=":uno: sr-only">Located in:</span> United States
@@ -123,7 +123,7 @@ export default function PageIndex() {
 						<dt class=":uno: sr-only">Specializing in:</dt>
 						{SPECIALIZATIONS.map((specialization) => (
 							<dd
-								class=":uno: text-3 rounded-2.5 backdrop-blur-1 inline-block border border-solid border-black/20 bg-white/30 px-1.5 py-1 leading-tight dark:border-white/30 dark:bg-black/30"
+								class=":uno: text-3 leading-tight px-1.5 py-1 border border-black/20 rounded-2.5 border-solid bg-white/30 inline-block backdrop-blur-1 dark:border-white/30 dark:bg-black/30"
 								key={specialization}
 							>
 								{specialization}
@@ -132,7 +132,7 @@ export default function PageIndex() {
 						<dt class=":uno: sr-only">Proficient in:</dt>
 						{PROFICIENCIES.map((proficiency) => (
 							<dd
-								class=":uno: text-3 rounded-2.5 backdrop-blur-1 inline-block border border-solid border-black/20 bg-white/30 px-1.5 py-1 leading-tight dark:border-white/30 dark:bg-black/30"
+								class=":uno: text-3 leading-tight px-1.5 py-1 border border-black/20 rounded-2.5 border-solid bg-white/30 inline-block backdrop-blur-1 dark:border-white/30 dark:bg-black/30"
 								key={proficiency}
 							>
 								{proficiency}

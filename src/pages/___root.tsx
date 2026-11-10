@@ -3,7 +3,7 @@ import "virtual:uno.css";
 
 export default function RootLayout({ children }: { children: JSX.Children }) {
 	return (
-		<html class=":uno: h-dvh overflow-hidden text-black antialiased dark:text-white/90" lang="en">
+		<html class=":uno: text-black antialiased overflow-hidden h-dvh dark:text-white/90" lang="en">
 			<head>
 				<meta charset="utf-8" />
 				<meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -26,7 +26,7 @@ export default function RootLayout({ children }: { children: JSX.Children }) {
 					type="font/woff2"
 				/>
 			</head>
-			<body class=":uno: grid h-dvh touch-manipulation place-items-center-safe overflow-hidden antialiased">
+			<body class=":uno: grid antialiased place-items-center-safe overflow-hidden h-dvh touch-manipulation">
 				{children}
 			</body>
 		</html>

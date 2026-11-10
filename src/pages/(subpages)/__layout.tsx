@@ -14,13 +14,13 @@ export default function LayoutSubpages({ children }: { children: JSX.Children })
 		<>
 			<Glass
 				as="nav"
-				class=":uno: m-4.3 bottom-7.3 view-transition-breadcrumb [&>wren-link,&>span]:(p-2 flex) absolute left-0 z-2 inline-flex items-center gap-2 px-2"
+				class=":uno: m-4.3 px-2 inline-flex gap-2 items-center bottom-7.3 left-0 absolute z-2 view-transition-breadcrumb [&>wren-link,&>span]:(p-2 flex)"
 			>
 				<Link href="/">Home</Link>
 				<Icon icon="i-lucide:chevron-right" />
 				<span>
 					{BREADCRUMB.map((crumb) => (
-						<span class=":uno: flex items-center gap-1.5 font-semibold">
+						<span class=":uno: font-semibold flex gap-1.5 items-center">
 							<Icon icon={crumb.icon} />
 							{crumb.name}
 						</span>

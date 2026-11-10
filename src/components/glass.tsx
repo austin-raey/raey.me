@@ -12,7 +12,7 @@ export default function Glass({
 	const Component = as || "div";
 	return (
 		<Component
-			class={`:uno: rounded-5 backdrop-blur-16 focus-visible:(outline-2 outline-offset-4) dark:(border-white/10 to-white/5) dark:(bg-black/33 bg-gradient-to-br from-black/1 to-black/5 ) gap-2 border border-white/30 bg-black/30 bg-white/10 bg-gradient-to-br from-white/15 from-white/30 to-white/5 shadow-[0_12px_32px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.65),inset_0_-1px_0_rgba(255,255,255,0.15)] outline-current backdrop-saturate-200 ${className}`}
+			class={`:uno: outline-current border border-white/30 rounded-5 bg-black/30 bg-white/10 gap-2 shadow-[0_12px_32px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.65),inset_0_-1px_0_rgba(255,255,255,0.15)] from-white/15 from-white/30 to-white/5 bg-gradient-to-br backdrop-blur-16 backdrop-saturate-200 focus-visible:(outline-2 outline-offset-4) dark:(border-white/10 bg-black/33 from-black/1 to-black/5 to-white/5 bg-gradient-to-br) ${className}`}
 			{...props}
 		>
 			{children}

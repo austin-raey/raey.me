@@ -37,9 +37,9 @@ const PROJECTS = [
 
 export default function PageProjects() {
 	return (
-		<div class=":uno: text-4 relative flex h-full flex-col gap-2">
+		<div class=":uno: text-4 flex flex-col gap-2 h-full relative">
 			<header>
-				<h1 class=":uno: text-9 view-transition-heading mb-3 font-extrabold">Projects</h1>
+				<h1 class=":uno: text-9 font-extrabold mb-3 view-transition-heading">Projects</h1>
 				<p class="view-transition-description">
 					A collection of projects I've worked on or am working on.
 				</p>
@@ -51,14 +51,14 @@ export default function PageProjects() {
 						<li class={project.class}>
 							<Glass
 								as={Link}
-								class=":uno: [&>i]:(mx-4 my-2) block h-full px-4 py-2"
+								class=":uno: px-4 py-2 h-full block [&>i]:(mx-4 my-2)"
 								href={project.url}
 								rel="noopener noreferrer"
 								target="_blank"
 							>
-								<Icon class=":uno: absolute top-0 right-0 size-5" icon={project.icon} />
-								<h2 class="text-6 m-0 mb-1 font-semibold">{project.name}</h2>
-								<span class="text-3.5 m-0 leading-none">{project.description}</span>
+								<Icon class=":uno: size-5 right-0 top-0 absolute" icon={project.icon} />
+								<h2 class="text-6 font-semibold m-0 mb-1">{project.name}</h2>
+								<span class="text-3.5 leading-none m-0">{project.description}</span>
 							</Glass>
 						</li>
 					))}

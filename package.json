@@ -1,38 +1,41 @@
 {
-	"devDependencies": {
-		"@iconify-json/lucide": "1.2.151",
-		"@iconify-json/simple-icons": "1.2.101",
-		"@lumeland/ssx": "0.1.16",
-		"@slowpoketail/oxc": "1.8.0",
-		"@wren-js/core": "0.25.0",
-		"@wren-js/ssx": "0.25.0",
-		"oxfmt": "0.76.0",
-		"oxlint": "1.91.0",
-		"oxlint-tsgolint": "7.0.2005",
-		"typescript": "7.0.2",
-		"unocss": "66.12.0",
-		"wrangler": "4.157.0"
-	},
-	"devEngines": {
-		"packageManager": {
-			"name": "pnpm",
-			"onFail": "download",
-			"version": "12.16.1"
-		},
-		"runtime": {
-			"name": "node",
-			"onFail": "download",
-			"version": "26.13.0"
-		}
-	},
+	"type": "module",
 	"imports": {
 		"#/*": "./src/*"
 	},
-	"packageManager": "pnpm@12.16.1",
 	"scripts": {
 		"build": "wren build",
 		"dev": "wren dev",
 		"lint": "oxfmt --write && oxlint --fix --fix-suggestions --fix-dangerously"
 	},
-	"type": "module"
+	"dependencies": {
+		"@unocss/eslint-plugin": "^66.12.0"
+	},
+	"devDependencies": {
+		"@iconify-json/lucide": "1.2.152",
+		"@iconify-json/simple-icons": "1.2.101",
+		"@lumeland/ssx": "0.1.16",
+		"@slowpoketail/oxc": "1.8.0",
+		"@wren-js/core": "0.31.0",
+		"@wren-js/ssx": "0.31.0",
+		"oxfmt": "0.78.0",
+		"oxlint": "1.93.0",
+		"oxlint-tsgolint": "7.0.2006",
+		"typescript": "7.0.2",
+		"unocss": "66.12.0",
+		"wrangler": "4.159.0"
+	},
+	"devEngines": {
+		"packageManager": {
+			"name": "pnpm",
+			"version": "12.16.1",
+			"onFail": "download"
+		},
+		"runtime": {
+			"name": "node",
+			"version": "26.13.0",
+			"onFail": "download"
+		}
+	},
+	"packageManager": "pnpm@12.16.1"
 }

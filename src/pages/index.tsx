@@ -1,4 +1,4 @@
-import Link from "@wren-js/core/link";
+import Link from "@wrenjs/core/link";
 
 import Glass from "#/components/glass.js";
 import Icon from "#/components/icon";

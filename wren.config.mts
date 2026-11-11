@@ -1,5 +1,5 @@
-import { defineConfig } from "@wren-js/core/config";
-import ssx from "@wren-js/ssx";
+import { defineConfig } from "@wrenjs/core/config";
+import ssx from "@wrenjs/ssx";
 import uno from "unocss/vite";
 
 export default defineConfig({
